@@ -1,0 +1,299 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	text-align:center;
+	font-family:"KoHo";
+}
+
+#welcome {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1536286053831-52e1354eb5b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b5e03ea0031947e759c50ff15bc413e6&auto=format&fit=crop&w=1950&q=80);
+	height:800px;
+	margin-top:-150px;
+
+}
+
+nav {
+	display:flex;
+	justify-content:space-between;
+	background:white;
+	font-weight:bold;
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+}
+
+nav p {
+	padding:15px;
+	padding-left:160px;
+	color:	#484848;
+}
+
+.nav-bar {
+	display:flex;
+	padding-right:160px;
+}
+
+.nav-bar li {
+	list-style-type:none;
+	padding:15px;
+}
+
+.nav-bar a {
+	color:#484848;
+	text-decoration:none;
+}
+
+.title {
+	display:flex;
+	flex-direction:column;
+	width:25%;
+	margin:0 auto;
+	color:white;
+	margin-top:190px;
+}
+
+
+.title h1 {
+	margin-top:250px;
+	font-size:80px;
+	text-shadow: 2px 2px #000000;
+}
+
+.title p {
+	padding:15px;
+	font-size:30px;
+	border-bottom-style:solid;
+	border-bottom-color:white;
+	border-bottom-width:1px;
+	text-shadow: 2px 2px #000000;
+}
+
+.title-soc-media {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-top:20px;
+
+}
+
+.title-soc-media a {
+	text-decoration:none;
+	display:block;
+	background-color:#F5F5F5;
+	padding:12px;
+	border-radius:8%;
+	color:#484848;
+}
+
+.title-soc-media a:hover {
+	background-color:#DCDCDC;
+}
+
+.title-soc-media li {
+	list-style-type:none;
+}
+
+.contact-link {
+	margin:15px;
+	text-transform:uppercase;
+}
+
+
+.fab {
+	padding-right:10px;
+}
+
+.product-box {
+	display:flex;
+	justify-content:center;
+	padding:80px 0;
+	color:#2f2f2f;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#d8d8d8;
+}
+
+.product-box h2 {
+	font-size:35px;
+}
+
+.product-box p {
+	font-size: 20px;
+	padding-top:20px;
+}
+
+.product-box-text {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:left;
+	width:500px;
+	margin-right:150px;
+
+}
+
+.gray-shade {
+	background-color:#F0F0F0;
+}
+
+.product-box-img-1 {
+	width:500px;
+	height:auto;
+}
+
+.product-box-img-1 img {
+	width:100%;
+	border-radius:5%;
+	display:block;
+	height:auto;
+}
+
+.half-border {
+	padding-bottom:35px;
+	padding-left:4px;
+	color:#c2c2c2;
+	border-width:2px;
+}
+
+.product-box-img-2 {
+	width:500px;
+	height:auto;
+	margin-right:150px;
+}
+
+.product-box-img-2 img {
+	width:100%;
+	border-radius:5%;
+	display:block;
+	height:auto;
+}
+
+.contact-strip {
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	padding:70px 0;
+	background-image:url("https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.contact-strip h2 {
+	margin-right:150px;
+	font-size:40px;
+	text-shadow: 2px 2px #000000;
+	color:white;
+
+}
+
+.contact-link-bottom {
+	text-decoration:none;
+	display:block;
+	background-color:#F5F5F5;
+	padding:12px;
+	border-radius:8%;
+	color:#484848;
+
+}
+
+.contacts-bottom {
+	display:flex;
+	list-style-type:none;
+
+
+}
+
+.contacts-bottom a {
+	text-decoration:none;
+	display:block;
+	background-color:#F5F5F5;
+	padding:12px;
+	border-radius:8%;
+	color:#484848;
+}
+
+.bottom-contact-link {
+	margin:15px;
+	text-transform:uppercase;
+}
+
+.footer-contacts {
+	display:flex;
+	justify-content:center;
+	list-style-type:none;
+	margin:40px 0;
+}
+
+.footer-contacts li {
+	margin-right:15px;
+}
+
+.footer-contacts a {
+	text-decoration:none;
+}
+
+footer p {
+	color:#484848;
+	margin-bottom:15px;
+}
+
+@media (max-width:1370px) {
+
+	.product-box-text {
+		margin-right:20px;
+	}
+
+	.product-box-img-2 {
+		margin-right:20px;
+	}
+}
+
+@media (max-width:1120px) {
+
+	.contact-strip {
+		flex-direction:column;
+		text-align:center;
+	}
+
+	.contact-strip h2 {
+		margin:0 auto;
+		margin-bottom:20px;
+	}
+}
+
+
+@media (max-width:950px) {
+
+	.product-box {
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+
+	.product-box-text {
+		margin:0 auto;
+		text-align:center;
+		margin-bottom:20px;
+	}
+
+	.reverse {
+		flex-direction:column-reverse;
+	}
+}
+
+@media (max-width:730px) {
+
+	nav p {
+		padding-left:20px;
+	}
+
+	.title {
+		width:75%;
+	}
+
+	.title h1 {
+		margin-top:200px;
+	}
+}
